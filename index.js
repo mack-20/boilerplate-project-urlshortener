@@ -6,7 +6,6 @@ const urlparser = require('url');
 const dns = require('dns');
 
 const {MongoClient} = require('mongodb');
-const { url } = require('inspector');
 
 const client = new MongoClient(process.env.MONGO_URI)
 const db = client.db("urlshortener")
